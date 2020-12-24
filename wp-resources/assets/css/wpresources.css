@@ -1,0 +1,120 @@
+#add_blogs_wpresources .postbox-header{
+    display: none;
+}
+.wpresource-my-container {
+    padding: 5px;
+}
+.wpresource-content-wrap {
+    background-color: #fff;
+    border: 2px solid #e2e1e1;
+    display:flex;
+}
+.wpresource-tab-group-left{
+    flex:30%;
+}
+.wpresource-tab-list ul{
+    margin:0;
+}
+.wpresource-tab-list li{
+    margin:0;
+    list-style-type: none;
+}
+.wpresource-tab-list li a{
+    margin:0;
+    background: #DDDDDE;
+    border-width: thin 0;
+    border-color:#CCD0D4;
+    border-style: solid;
+}
+.wpresource-tab-list li:first-child a {
+    border-top-width: 0px;
+    background: #fff;
+}
+.wpresource-tab-list .wpresourcetab-selected a{
+    background: #fff;
+}
+.wpresourcetab-notactive a{
+    background: #DDDDDE;
+}
+.wpresource-tab-list li:last-child {
+    border-bottom-width: 0px;
+}
+.wpresource-tab-list li a{
+    font-weight: 600;
+    text-decoration: none;
+    padding: 13px 0 13px 25px;
+    display: block;
+}
+.wpresource-tab-group-right{
+    flex:70%;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+.wpresource-tab-input-ebooks, .wpresource-tab-input-casestudies{
+    display: none;
+}
+.wpresource-tab-list li a:active, .wpresource-tab-list li a:focus {
+    outline: 0;
+    border: none;
+    box-shadow: none !important;
+}
+div#wpresource-tab-input-blogs{
+    display: grid;
+}
+div#wpresource-tab-input-blogs, div#wpresource-tab-input-ebooks, div#wpresource-tab-input-casestudies{
+    gap: 10px;
+    grid-template-columns: 118px 1fr;
+    align-items: center;
+}
+.wpresource-blog-label {
+    grid-column: 1;
+}
+.wpresource-input-data {
+    grid-column: 2;
+}
+input#blog_count,input#ebook_count, input#casestudy_count, #wpresource-select-blogs {
+    padding: 6px;
+}
+.wpresource-input-data span {
+    margin-left: 12px;
+    border: 1px solid #c3213f;
+    border-radius: 30px;
+    font-size: 19px;
+    /* padding: 6px; */
+    position: relative;
+    line-height: 0;
+    display: inline-block;
+    color: #c3213f;
+    font-weight: 500;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.wpresource-input-data span:before {
+    content: "×";
+    position: absolute;
+    top: 6px;
+    left: 1px;
+}
+.wpresource-selected-input{
+    display: grid;
+}
+.wpresource-shortcode-input{
+    width:100%;
+}
+
+
+@media (max-width: 800px) {
+    .wpresource-content-wrap {
+        flex-wrap: wrap;
+    }
+    .wpresource-tab-group-left, .wpresource-tab-group-right{
+        flex: 100%;
+    }
+    .wpresource-tab-group-right{
+        margin-left: 0;
+        padding-left: 25px;
+    }
+}
